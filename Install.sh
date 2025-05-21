@@ -11,13 +11,9 @@ green='\033[92m'
 clear
 sleep 1.5
 echo -e "$default"
-apt install python
-apt install python2 
-apt install pip
-apt install pip2
-pip install requests
-pip2 install requests
+apk update && apk upgrade
+apk add python3 git bash curl
 cd
 cd
 cd AllHackingTools
-python2 src/InstallMenu.py
+python3 src/InstallMenu.py
